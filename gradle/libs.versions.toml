@@ -1,0 +1,44 @@
+[versions]
+agp = "8.6.0"
+googleAuthLibraryOauth2Http = "0.26.0"
+googleCloudSpeech = "1.29.1"
+googleCloudSpeechVersion = "2.5.0"
+grpcOkhttp = "1.38.1"
+grpcOkhttpVersion = "1.46.0"
+grpcStub = "1.46.0"
+kotlin = "1.9.0"
+coreKtx = "1.15.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+activity = "1.9.3"
+constraintlayout = "2.1.4"
+firebaseAppdistributionGradle = "5.1.1"
+protobufJava = "3.25.5"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+google-auth-library-oauth2-http = { module = "com.google.auth:google-auth-library-oauth2-http", version.ref = "googleAuthLibraryOauth2Http" }
+google-cloud-speech = { module = "com.google.cloud:google-cloud-speech", version.ref = "googleCloudSpeech" }
+google-cloud-speech-v250 = { module = "com.google.cloud:google-cloud-speech", version.ref = "googleCloudSpeechVersion" }
+grpc-auth = { module = "io.grpc:grpc-auth", version.ref = "grpcOkhttpVersion" }
+grpc-okhttp = { module = "io.grpc:grpc-okhttp", version.ref = "grpcOkhttp" }
+grpc-okhttp-v1460 = { module = "io.grpc:grpc-okhttp", version.ref = "grpcOkhttpVersion" }
+grpc-stub = { module = "io.grpc:grpc-stub", version.ref = "grpcOkhttp" }
+grpc-stub-v1460 = { module = "io.grpc:grpc-stub", version.ref = "grpcStub" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+firebase-appdistribution-gradle = { group = "com.google.firebase", name = "firebase-appdistribution-gradle", version.ref = "firebaseAppdistributionGradle" }
+protobuf-java = { module = "com.google.protobuf:protobuf-java", version.ref = "protobufJava" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+
